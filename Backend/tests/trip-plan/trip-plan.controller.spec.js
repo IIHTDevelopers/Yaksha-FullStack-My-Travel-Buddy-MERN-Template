@@ -38,7 +38,7 @@ describe('TripPlan Controller', () => {
             expect(mRes.json).toHaveBeenCalledWith(mockTripPlan);
         });
 
-        it(`${tripPlanControllerBoundaryTest} should return a 400 error when missing required fields`, async () => {
+        it(`${tripPlanControllerBoundaryTest} should return a 400 error when required fields are missing`, async () => {
             const mReq = {
                 body: {
                     user: 'userId',
